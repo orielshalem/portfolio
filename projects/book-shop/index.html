@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/main.css">
+
+  <title>Oriel's Book Shop</title>
+</head>
+
+<body onload="onInit()">
+  <header>
+  <select onchange="onSetLang(this.value)">
+    <option value="en">English</option>
+    <option value="he">עברית</option>
+  </select>
+
+  <h1 data-trans="title">Welcome to my Book Store</h1>
+  <button type="button" class="btn btn-primary" data-trans="btn-new-book"
+   onclick="onReadAndAddNewBook()">Create new book</button>
+  </header>
+  <section class="books-container table-responsive-sm">
+    <table class="table">
+      <thead class="thead-dark">
+        <tr>
+          <th scope="col" data-trans="thead-id">Id</th>
+          <th scope="col" data-trans="thead-title">Title</th>
+          <th scope="col" data-trans="thead-price">Price</th>
+          <th scope="col" data-trans="thead-rate">Rating</th>
+          <th scope="col" colspan="3" data-trans="thead-action">Actions</th>
+        </tr>
+      <tbody class='books-table'></tbody>
+  </section>
+
+  <div class="modal fade" id="exampleModalScrollable" tabindex="-1" role="dialog"
+    aria-labelledby="exampleModalScrollableTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-scrollable" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title"></h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          ...
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary" data-dismiss="modal">Save changes</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+  <script src="js/util-service.js"></script>
+  <script src="js/book-shop-service.js"></script>
+  <script src="js/i18n-service.js"></script>
+  <script src="js/book-shop-main.js"></script>
+
+</body>
+
+</html>

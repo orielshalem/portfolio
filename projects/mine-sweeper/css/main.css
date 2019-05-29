@@ -1,0 +1,132 @@
+
+
+body{
+  font-family: 'Maiden Orange', cursive;
+  background-color: #6D2E46
+}
+
+header{
+  display: flex;
+  justify-content: space-between;
+  width: 80vw;
+  margin: auto;
+}
+
+.cell {
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    font-size: 1.5em;
+  }
+
+.button {
+    background-color:#028090;
+    border: none;
+    color: black;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 10px 9px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+table {
+  background-color: #A26769;
+  border-radius: 5px;
+  margin: 0 auto;
+}
+
+
+.button:hover {
+    background-color: #02C39A;
+    color: white;
+  }
+
+.flipped img{
+display: none;    
+}
+
+.smiley img {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%
+}
+
+.play-again {
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 15px;
+}
+
+.clicked {
+  background-color: #02C39A
+}
+
+td:hover {
+background-color: #D5B9B2;
+transition-duration: 0.4s;
+}
+
+
+.timer{
+  text-align: center ;
+  border-style: solid;
+  padding: 10px;
+  border-color: cadetblue;
+  background-color: #A26769;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  min-width:100px; 
+  display: inline-block;
+}
+
+.life{
+  border-style: solid;
+  padding: 10px;
+  border-color: cadetblue;
+  background-color: #A26769;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  min-width:100px; 
+  display: inline-block;
+}
+
+.smiley {
+  padding-top: 20px;
+}
+
+.container {
+  border-style: solid;
+    border-color: darkred;
+    padding: 25px;
+    opacity: 0.8
+}
+
+.hints {
+  display: flex;
+  justify-content: center;
+  margin: 20px
+}
+
+.hints img{
+  height: 50px;
+  width: 50px;
+}
+
+.hint-mode {
+  text-align: center;
+}
+
+.hinted {
+  background-color: #CEBEBE;
+}
